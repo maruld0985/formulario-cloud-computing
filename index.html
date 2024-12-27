@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Estudiante</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Vincula el archivo CSS -->
+</head>
+<body>
+  <h1>Formulario de Estudiante</h1>
+
+  <!-- Formulario para agregar estudiantes -->
+  <form id="formEstudiante">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" placeholder="Ingresa el nombre" required>
+    
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" placeholder="Ingresa el apellido" required>
+    
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" placeholder="Ingresa la edad" required>
+    
+    <label for="correo">Correo:</label>
+    <input type="email" id="correo" placeholder="Ingresa el correo" required>
+    
+    <button type="button" id="btnGuardar">Guardar</button>
+  </form>
+
+  <!-- Tabla para mostrar estudiantes -->
+  <table id="tablaEstudiantes">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Edad</th>
+        <th>Correo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Las filas se agregarán dinámicamente aquí -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script> <!-- Vincula el archivo JavaScript -->
+</body>
+</html>
